@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momozin</title>
+    <style>
+#cabecalho {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-top: 50px;
+}
+
+
+.button-confirm {
+    border: none;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 115px 200px;
+    background-color: pink;
+    cursor: pointer;
+}
+
+
+
+
+.button-negativ {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 600px;
+  margin: 115px 200px;
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+    <h1 id="cabecalho">
+        Quer casar comigo?
+    </h1>
+    <a href="https://tenor.com/pt-BR/view/kiss-gif-24758179" target="_blank">
+        <button id="" class="button-confirm" onclick >Sim</button>
+    </a>
+
+    <button id="" class="button-negativ" onmouseover="moveButton(this)">Não</button>
+
+<script>
+    function moveButton(x) {
+        marginX = Math.floor(Math.random()*800)
+        marginY = Math.floor(Math.random()*700)
+
+        x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+    }
+</script>
+</body>
+</html>
